@@ -7,11 +7,15 @@ public class HoneyDecorator extends IcecreamDecorator{
 	  }
 
 	  public String makeIcecream() {
-	    return specialIcecream.makeIcecream() + addHoney();
+	    return specialIcecream.makeIcecream() + addHoney() + addCream();
 	  }
 
 	  private String addHoney() {
 	    return " + sweet honey";
+	  }
+	  
+	  private String addCream() {
+		  return " + vanilaCream";
 	  }
 
 }

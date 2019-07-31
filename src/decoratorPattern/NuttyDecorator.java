@@ -7,11 +7,14 @@ public class NuttyDecorator extends IcecreamDecorator {
 	  }
 
 	  public String makeIcecream() {
-	    return specialIcecream.makeIcecream() + addNuts();
+	    return specialIcecream.makeIcecream() + addNuts() + addFruits();
 	  }
 
 	  private String addNuts() {
 	    return " + cruncy nuts";
+	  }
+	  private String addFruits() {
+		  return " + mango";
 	  }
 
 }
